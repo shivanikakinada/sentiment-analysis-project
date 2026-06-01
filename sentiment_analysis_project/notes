@@ -1,2 +1,5 @@
 .env file is to store secrets. we are storing api keys. this will not push the secrets to github
 we install python dotenv and change the code to get the secrets from env file
+docker command to run the application: 
+docker build -t news-app .
+docker run -p 8501:8501 --env-file .env news-app
