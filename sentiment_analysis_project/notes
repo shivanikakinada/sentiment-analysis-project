@@ -1,5 +1,26 @@
-.env file is to store secrets. we are storing api keys. this will not push the secrets to github
-we install python dotenv and change the code to get the secrets from env file
-docker command to run the application: 
-docker build -t news-app .
-docker run -p 8501:8501 --env-file .env news-app
+*).env file is to store secrets. we are storing api keys. this will not push the secrets to github
+*)we install python dotenv and change the code to get the secrets from env file
+*)docker command to run the application: 
+    docker build -t news-app .
+    docker run -p 8501:8501 --env-file .env news-app
+*)app.py is to access the code via ui (web application)
+    streamlit run app.py
+*)fetch-news.py is to access the code via terminal
+    python src/fetch-news.py
+*) below is the project structure
+User enters "AWS"
+      ↓
+NewsAPI
+      ↓
+fetch_news.py
+      ↓
+DataFrame
+      ↓
+sentiment.py
+      ↓
+Positive / Negative / Neutral
+      ↓
+visualize.py
+      ↓
+Charts in Streamlit
+
