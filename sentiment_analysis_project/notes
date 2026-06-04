@@ -7,7 +7,7 @@
     streamlit run app.py
 *)fetch-news.py is to access the code via terminal
     python src/fetch-news.py
-*) below is the project structure
+*) below is the project structure-- phase 1
 User enters "AWS"
       ↓
 NewsAPI
@@ -23,4 +23,20 @@ Positive / Negative / Neutral
 visualize.py
       ↓
 Charts in Streamlit
+
+
+*) target architecture
+News API
+    ↓
+Airflow
+    ↓
+PostgreSQL
+    ↓
+Sentiment Analysis
+    ↓
+OpenSearch
+    ↓
+FastAPI
+    ↓
+Streamlit
 
